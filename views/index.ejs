@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Redily - Redis URL shortner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="/stylesheets/bootstrap-responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Redily</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="alerts">
+      </div>
+      <div class="input-append">
+        <input id="url" class="span2" style="background:url(images/link.png) no-repeat scroll 5px 5px; padding-left: 25px;" size="26" type="text" autocorrect="off" autocomplete="off" autocapitalize="off" placeholder="url to shorten" />
+        <button class="btn btn-primary" type="button" id="add">Add</button>
+        <a class="btn btn-info" href="/random" target="_blank">Surprise Me</a>
+      </div>
+      <div class="links">
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script src="/javascripts/bootstrap-transition.js"></script>
+    <script src="/javascripts/bootstrap-alert.js"></script>
+    <script src="/javascripts/redily.js"></script>
+
+  </body>
+</html>
